@@ -4,5 +4,20 @@
         <name>CSharpNotes</name>
     </assembly>
     <members>
+        <member name="T:Comments.Calculator">
+            <summary>
+            this is a calculator class
+            </summary>
+        </member>
+        <member name="M:Comments.Calculator.Add(System.Int32,System.Int32)">
+            <summary>
+            this is a method to add two numbers
+            </summary>
+        </member>
+        <member name="M:Comments.Calculator.Subtract(System.Int32,System.Int32)">
+            <summary>
+            this is a method to subtract two numbers
+            </summary>
+        </member>
     </members>
 </doc>

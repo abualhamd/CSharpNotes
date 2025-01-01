@@ -1,35 +1,47 @@
-﻿// See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Hello, World!");
+﻿// // See https://aka.ms/new-console-template for more information
+// // Console.WriteLine("Hello, World!");
 
 
-// int feetToInches(int feet){
-//     return feet * 12;
+// // int feetToInches(int feet){
+// //     return feet * 12;
+// // }
+
+// // Console.WriteLine(feetToInches(5));
+
+// //         Console.WriteLine("Enter a number!");
+// // var input = Console.ReadLine();
+
+// // if(int.TryParse(input, out int result)){
+
+// //         Console.WriteLine($"{result} parsed successfully");
+
+// // }
+
+// void GetSumAndProduct(int a, int b, out int sum, out int product){
+//     sum = a+b;
+//     product = a*b;
 // }
 
-// Console.WriteLine(feetToInches(5));
+// GetSumAndProduct(5, 10, out int sum, out int product);
 
-//         Console.WriteLine("Enter a number!");
-// var input = Console.ReadLine();
+// Console.WriteLine($"Sum: {sum}, Product: {product}");
 
-// if(int.TryParse(input, out int result)){
-
-//         Console.WriteLine($"{result} parsed successfully");
+// (int sum, int product) GetSumAndProduct2(int a, int b){
+//     return (a+b, a*b);
 
 // }
 
-void GetSumAndProduct(int a, int b, out int sum, out int product){
-    sum = a+b;
-    product = a*b;
+// var (sum2, product2) = GetSumAndProduct2(5, 10);
+// Console.WriteLine($"Sum2: {sum2}, Product2: {product2}");
+using Comments;
+  
+class Program
+{
+    static void Main(){
+        var calc = new Calculator();
+        
+        var result = calc.Add(5, 10);
+
+        Console.WriteLine(result);
+    }
 }
-
-GetSumAndProduct(5, 10, out int sum, out int product);
-
-Console.WriteLine($"Sum: {sum}, Product: {product}");
-
-(int sum, int product) GetSumAndProduct2(int a, int b){
-    return (a+b, a*b);
-
-}
-
-var (sum2, product2) = GetSumAndProduct2(5, 10);
-Console.WriteLine($"Sum2: {sum2}, Product2: {product2}");
