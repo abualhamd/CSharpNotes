@@ -38,10 +38,14 @@ using Comments;
 class Program
 {
     static void Main(){
-        var calc = new Calculator();
+        // var calc = new Calculator();
         
-        var result = calc.Add(5, 10);
+        // var result = calc.Add(5, 10);
 
+        // Console.WriteLine(result);
+
+        var unitConverter = new UnitConverter(100);
+        var result = unitConverter.Convert(5);
         Console.WriteLine(result);
     }
 }

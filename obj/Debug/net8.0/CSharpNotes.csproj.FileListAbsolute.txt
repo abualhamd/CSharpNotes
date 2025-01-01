@@ -14,3 +14,4 @@
 /Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/ref/CSharpNotes.dll
 /Users/abualhamd/dotnet_projects/CSharpNotes/bin/Debug/net8.0/CSharpNotes.xml
 /Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/CSharpNotes.xml
+/Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/CSharpNotes.sourcelink.json

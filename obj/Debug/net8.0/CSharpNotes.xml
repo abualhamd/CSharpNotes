@@ -19,5 +19,23 @@
             this is a method to subtract two numbers
             </summary>
         </member>
+        <member name="T:UnitConverter">
+            <summary>
+            This class converts units of measurement.
+            </summary>
+            <param name="ratio"></param>
+            <remarks>
+            This class uses Primary Constructor Syntax to create a UnitConverter object.
+            </remarks>
+        </member>
+        <member name="M:UnitConverter.#ctor(System.Int32)">
+            <summary>
+            This class converts units of measurement.
+            </summary>
+            <param name="ratio"></param>
+            <remarks>
+            This class uses Primary Constructor Syntax to create a UnitConverter object.
+            </remarks>
+        </member>
     </members>
 </doc>
