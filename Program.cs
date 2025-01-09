@@ -33,6 +33,7 @@
 
 // var (sum2, product2) = GetSumAndProduct2(5, 10);
 // Console.WriteLine($"Sum2: {sum2}, Product2: {product2}");
+using System.Text;
 using Comments;
   
 class Program
@@ -44,8 +45,16 @@ class Program
 
         // Console.WriteLine(result);
 
-        var unitConverter = new UnitConverter(100);
-        var result = unitConverter.Convert(5);
-        Console.WriteLine(result);
+        // var unitConverter = new UnitConverter(100);
+        // var result = unitConverter.Convert(5);
+        // Console.WriteLine(result);
+
+        StringBuilder sb = new();
+
+        sb.Append("Hello, ");
+        sb.Append("World!");
+
+        Console.WriteLine(sb.ToString());
+
     }
 }
