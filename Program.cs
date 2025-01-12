@@ -35,6 +35,7 @@
 // Console.WriteLine($"Sum2: {sum2}, Product2: {product2}");
 using System.Text;
 using Comments;
+using Points;
   
 class Program
 {
@@ -49,12 +50,20 @@ class Program
         // var result = unitConverter.Convert(5);
         // Console.WriteLine(result);
 
-        StringBuilder sb = new();
+        Point2D point1 = new (3,4);
+        Point2D point2 = new (3,4);
 
-        sb.Append("Hello, ");
-        sb.Append("World!");
 
-        Console.WriteLine(sb.ToString());
+        Console.WriteLine(point1.Equals(point2));
 
+        Point3D point3 = new (3,4,5);
+        Point3D point4 = new (3,4,5);
+
+        Console.WriteLine(point3.Equals(point4));
+
+
+        Point2D point5 = new Point2D();
+
+        Console.WriteLine(point5.Magnitude.ToString());
     }
 }
