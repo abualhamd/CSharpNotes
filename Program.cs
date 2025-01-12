@@ -66,8 +66,12 @@ class Program
 
         // Console.WriteLine(point5.Magnitude.ToString());
 
-        F.G g = new();
+        // F.G g = new();
 
-        Console.WriteLine(g.GetType());
+        // Console.WriteLine(g.GetType());
+
+         CardPayment p = CardPayment.PayMasterCard();
+
+        p.Pay();
     }
 }
