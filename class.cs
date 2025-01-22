@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 abstract class A{
     public abstract void doSomething();
@@ -109,4 +110,12 @@ class MyUselessList : IEnumerable<int> {
     {
         throw new NotImplementedException();
     }
+}
+
+public partial class PartialClass{
+    public void Method1(){}
+}
+
+partial class PartialClass{
+    public void Method2(){}
 }

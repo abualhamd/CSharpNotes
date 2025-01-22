@@ -70,8 +70,13 @@ class Program
 
         // Console.WriteLine(g.GetType());
 
-         CardPayment p = CardPayment.PayMasterCard();
+        //  CardPayment p = CardPayment.PayMasterCard();
 
-        p.Pay();
+        // p.Pay();
+
+        var partialClass = new PartialClass();
+
+        partialClass.Method1();
+        partialClass.Method2();
     }
 }
