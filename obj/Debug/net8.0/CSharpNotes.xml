@@ -4,6 +4,12 @@
         <name>CSharpNotes</name>
     </assembly>
     <members>
+        <member name="T:CardPayment">
+            <summary>
+            nested classes can be used with factory pattern or
+            to implement Enumerators or Comprators
+            </summary>
+        </member>
         <member name="T:Comments.Calculator">
             <summary>
             this is a calculator class

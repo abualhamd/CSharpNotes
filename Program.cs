@@ -74,9 +74,28 @@ class Program
 
         // p.Pay();
 
-        var partialClass = new PartialClass();
+        // var partialClass = new PartialClass();
 
-        partialClass.Method1();
-        partialClass.Method2();
+        // partialClass.Method1();
+        // partialClass.Method2();
+
+        // Console.WriteLine(Test.b);
+        // Console.WriteLine(Test.NestedTest.b);
+        // // Console.WriteLine(Test2.NestedTest.);
+        // Console.WriteLine(Test2.NestedTest.c);
+
+        // Test tb = new  Test();
+        // Test td = new  Test2();
+        // tb.Method1();
+        // td.Method1();
+
+        J bc = new  J();
+        J dc = new  K();
+        bc.Method1();
+        dc.Method1();
+
+
+
+
     }
 }

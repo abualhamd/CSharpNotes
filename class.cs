@@ -119,3 +119,45 @@ public partial class PartialClass{
 partial class PartialClass{
     public void Method2(){}
 }
+
+public class Test{
+
+    public Test(){}
+    public const int b =0;
+
+    public void Method1(){
+        Console.WriteLine("Method 1 - Base Class");
+    }
+    public new class NestedTest:Test{
+        
+        
+           public const int b = 5;
+    }
+
+}
+
+public class Test2:Test{
+
+    new public void Method1(){
+        Console.WriteLine("Method 1 - Derived Class");
+    }
+
+    public new class NestedTest{
+        
+        
+           public const int c = 5;
+    }
+
+}
+
+class J{
+    virtual public void Method1(){
+        Console.WriteLine("Method 1 - Base Class");
+    }
+}
+class K:J{
+    // override
+    new public void Method1(){
+        Console.WriteLine("Method 1 - Derived Class");
+    }
+}
