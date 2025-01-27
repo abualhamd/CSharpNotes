@@ -39,63 +39,68 @@ using Points;
   
 class Program
 {
+    public delegate void MyDelegate(int a);
+    public delegate void MyDelegate2(int a);
+
+    /// <summary>
+    /// unmanaged: The type must be a non-nullable value type that isn't a pointer type or a struct with no reference-type fields.
+    /// notnull: The type must be a non-nullable value type that isn't a pointer type.
+    /// new(): The type must have a public parameterless constructor.
+    /// </summary>
+    /// <typeparam name="K">input</typeparam>
+    /// <typeparam name="T">output</typeparam>
+    delegate T MyGenericDelegate<in K, out T>(K k) 
+        where K: unmanaged //, notnull, new() 
+        where T: notnull;
     static void Main(){
-        // var calc = new Calculator();
+        void myMethod(int a){
+            Console.WriteLine(a);
+        }
+
         
-        // var result = calc.Add(5, 10);
+        MyDelegate myDelegate1 = Console.WriteLine;
+        myDelegate1 += myMethod;
 
-        // Console.WriteLine(result);
+        var del1 = new MyDelegate(Console.WriteLine);
+        var del2 = new MyDelegate(myMethod);
 
-        // var unitConverter = new UnitConverter(100);
-        // var result = unitConverter.Convert(5);
-        // Console.WriteLine(result);
+        MyDelegate myDelegate2 = del1 + del2;
 
-        // Point2D point1 = new (3,4);
-        // Point2D point2 = new (3,4);
-
-
-        // Console.WriteLine(point1.Equals(point2));
-
-        // Point3D point3 = new (3,4,5);
-        // Point3D point4 = new (3,4,5);
-
-        // Console.WriteLine(point3.Equals(point4));
+        myDelegate1(2);
 
 
-        // Point2D point5 = new Point2D();
+        MyDelegate myDelegate3 = (int a)=> Console.WriteLine(a);
+        MyDelegate myDelegate4 = delegate (int a){Console.WriteLine(a);};
+        
 
-        // Console.WriteLine(point5.Magnitude.ToString());
+        myDelegate1 += myDelegate3+ myDelegate4;
 
-        // F.G g = new();
+        myDelegate1(4);
 
-        // Console.WriteLine(g.GetType());
+        Predicate<int> isEven = (int a) => a%2 == 0;
 
-        //  CardPayment p = CardPayment.PayMasterCard();
+        Console.WriteLine(isEven(5));
 
-        // p.Pay();
+        Func<int, int, int> add = (int a, int b) => a+b;
+        Console.WriteLine(add(5, 10));
 
-        // var partialClass = new PartialClass();
+        Action<object> print = (a) => Console.WriteLine(a.ToString());
+        print(5);
 
-        // partialClass.Method1();
-        // partialClass.Method2();
+        MyGenericDelegate<int, string> myGenericDelegate = (k) => "1";
+        myGenericDelegate += (k) => "2";
+        myGenericDelegate += (k) => "3";
 
-        // Console.WriteLine(Test.b);
-        // Console.WriteLine(Test.NestedTest.b);
-        // // Console.WriteLine(Test2.NestedTest.);
-        // Console.WriteLine(Test2.NestedTest.c);
+        Console.WriteLine(myGenericDelegate(700));
 
-        // Test tb = new  Test();
-        // Test td = new  Test2();
-        // tb.Method1();
-        // td.Method1();
+        /// delegate equality is name based
+        Delegate del3 = delegate (int a){Console.WriteLine(a);};
+        Delegate del4 = delegate (int a){Console.WriteLine(a);};
+        Console.WriteLine(del3.Equals(del4));
 
-        J bc = new  J();
-        J dc = new  K();
-        bc.Method1();
-        dc.Method1();
-
-
-
-
+        Console.WriteLine(myGenericDelegate.DynamicInvoke(400));
+        Console.WriteLine(myGenericDelegate.GetInvocationList().Length);
     }
+
+    
 }
