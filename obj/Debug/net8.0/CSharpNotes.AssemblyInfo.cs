@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpNotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c9650b1d9c50eb286c7409deb84f97011c70e8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c5ecfa1a6251b8f5ed5b239a5a47cd8a13911cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpNotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpNotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

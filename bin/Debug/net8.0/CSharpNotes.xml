@@ -43,14 +43,5 @@
             This class uses Primary Constructor Syntax to create a UnitConverter object.
             </remarks>
         </member>
-        <member name="T:Program.MyGenericDelegate`2">
-            <summary>
-            unmanaged: The type must be a non-nullable value type that isn't a pointer type or a struct with no reference-type fields.
-            notnull: The type must be a non-nullable value type that isn't a pointer type.
-            new(): The type must have a public parameterless constructor.
-            </summary>
-            <typeparam name="K">input</typeparam>
-            <typeparam name="T">output</typeparam>
-        </member>
     </members>
 </doc>
