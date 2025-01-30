@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cGFdaZzONQ8=",
+  "dgSpecHash": "yGPhsRYM2j8=",
   "success": true,
   "projectFilePath": "/Users/abualhamd/dotnet_projects/CSharpNotes/CSharpNotes.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/abualhamd/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -15,3 +15,6 @@
 /Users/abualhamd/dotnet_projects/CSharpNotes/bin/Debug/net8.0/CSharpNotes.xml
 /Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/CSharpNotes.xml
 /Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/CSharpNotes.sourcelink.json
+/Users/abualhamd/dotnet_projects/CSharpNotes/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/CSharpNotes.csproj.AssemblyReference.cache
+/Users/abualhamd/dotnet_projects/CSharpNotes/obj/Debug/net8.0/CSharpNo.2BFDDCCA.Up2Date
