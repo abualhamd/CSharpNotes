@@ -1,5 +1,4 @@
-﻿using VarianceSpace;
-
+﻿using Interfces;
 
 class Program
 {
